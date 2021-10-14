@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\Softwares\\Arduino\\tools\\**",
+                "D:\\Softwares\\Arduino\\hardware\\arduino\\avr\\**",
+                "D:\\Softwares\\Arduino\\hardware\\tools\\**",
+                "D:\\Softwares\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
+                "D:\\Softwares\\Arduino\\libraries\\**",
+                "C:\\Users\\tioma\\Documents\\Arduino\\libraries\\ESP32_BLE_Arduino\\src\\**",
+                "C:\\Users\\tioma\\AppData\\Local\\Arduino15\\packages\\**"
+            ],
+            "forcedInclude": [
+                "D:\\Softwares\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "${default}",
+            "compilerPath": "D:\\Softwares\\Arduino\\hardware\\tools\\avr\\bin\\avr-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "USBCON"
+            ],
+            "browse": {
+                "path": []
+            }
+        }
+    ],
+    "version": 4
+}

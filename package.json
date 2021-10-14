@@ -1,9 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "arduino:compile": "arduino-cli compile --fqbn esp32:esp32:esp32 ./arduino/bluetooth/bluetooth.ino",
+    "arduino:upload": "arduino-cli upload -p COM3 --fqbn esp32:esp32:esp32 ./arduino/bluetooth/bluetooth.ino",
+    "arduino": "yarn arduino:compile && yarn arduino:upload",
+    "dev": "next",
+    "ngrok": "ngrok http 3000"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.0",
@@ -14,5 +18,13 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@types/web-bluetooth": "^0.0.11",
+    "ngrok": "^4.2.2",
+    "typescript": "^4.4.3"
   }
 }
